@@ -1,0 +1,32 @@
+<h1>Home</h1>
+Here are all the cats!
+<% @cats.each do |cat| %>
+	Name of cat: <%= cat.name %>
+	<br/>
+<% end %>
+
+<br/>
+
+Here are all the users!
+<br/>
+
+<% @users.each do |user| %>
+	Name of User: <%= user.name %>
+	<br/>
+	Email of User: <%= user.email %>
+	<br/>
+	Age of User: <%= user.age %>
+	<br/>
+<% end %>
+
+<br/>
+
+Here are all the todos!
+<br/>
+
+<% @todos.each do |todo| %>
+	Task: <%= todo.tasks %>
+	<br/>
+	Status: <%= todo.finished %>
+	<br/>
+<% end %>
